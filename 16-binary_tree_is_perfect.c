@@ -11,7 +11,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 	return (binary_tree_is_full(tree) &&
-			(binary_tree_height(tree->left) == binary_tree_height(tree->right)));
+			(binary_tree_height(tree->left) - 1 == binary_tree_height(tree->right) - 1));
 }
 
 /**
